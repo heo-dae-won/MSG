@@ -18,4 +18,9 @@ public class Line implements Messenger {
 
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "override line toString()";
+    }
 }

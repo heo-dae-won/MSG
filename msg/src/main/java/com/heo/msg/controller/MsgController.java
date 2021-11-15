@@ -23,6 +23,8 @@ public class MsgController {
         Messenger messenger = messengerService.getMessenger(messengers);
         System.out.println("메신저 전송 결과 == " + messenger.sendMsg(message));
 
+        System.out.println(messengerService.toString());
+
         return new ResponseEntity<Boolean>(HttpStatus.OK);
     }
 

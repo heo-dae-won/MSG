@@ -18,4 +18,9 @@ public class Slack implements Messenger {
 
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "override slack toString()";
+    }
 }

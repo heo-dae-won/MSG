@@ -24,7 +24,14 @@ public class MessengerService {
         }else if(type == MessengerType.LINE) {
             messenger = line;
         }
-
         return messenger;
+    }
+
+    @Override
+    public String toString(){
+        return "{ " +
+                "slack ==> " + slack.toString()
+                + "line ==> " + line.toString()
+                + " }";
     }
 }
