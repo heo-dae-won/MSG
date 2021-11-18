@@ -23,4 +23,9 @@ public class Line implements Messenger {
     public String toString() {
         return "override line toString()";
     }
+
+    public void testMethod(){
+        Messenger.staticMethod("스태틱 메소드");
+        defaultMethod("디폴트 메소드");
+    }
 }
